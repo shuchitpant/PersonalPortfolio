@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="hero-design" width="746" height="739" viewBox="0 0 746 739">
+  <g id="SUPREME_GRAPHIC" data-name="SUPREME GRAPHIC" transform="matrix(-1, 0, 0, -1, 746, 739)" style="isolation: isolate">
+    <g id="Group_4" data-name="Group 4" transform="translate(1640 965) rotate(180)">
+      <g id="Group_3" data-name="Group 3">
+        <rect class="square-anim" id="Rectangle_2" data-name="Rectangle 2" width="179" height="179" rx="20" transform="translate(1273 226)" fill="#6e00ff"/>
+        <rect class="square-anim" id="Rectangle_4" data-name="Rectangle 4" width="179" height="179" rx="20" transform="translate(1273 413)" fill="#f655eb"/>
+        <rect class="square-anim" id="Rectangle_5" data-name="Rectangle 5" width="179" height="179" rx="20" transform="translate(1461 411)" fill="#ff64eb" opacity="0.35"/>
+        <rect class="square-anim" id="Rectangle_3" data-name="Rectangle 3" width="179" height="179" rx="20" transform="translate(1084 411)" fill="#fff"/>
+        <rect class="square-anim" id="Rectangle_6" data-name="Rectangle 6" width="179" height="179" rx="20" transform="translate(1273 600)" fill="#6e00ff"/>
+        <rect class="square-anim" id="Rectangle_7" data-name="Rectangle 7" width="179" height="179" rx="20" transform="translate(1084 600)" fill="#f655eb"/>
+        <rect class="square-anim" id="Rectangle_8" data-name="Rectangle 8" width="179" height="179" rx="20" transform="translate(894 600)" fill="#ffc9f8"/>
+        <rect class="square-anim" id="Rectangle_9" data-name="Rectangle 9" width="179" height="179" rx="20" transform="translate(1084 786)" fill="#fff"/>
+      </g>
+      <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="86" cy="86.5" rx="86" ry="86.5" transform="translate(1459 232)" fill="#ff64eb"/>
+      <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="86" cy="86.5" rx="86" ry="86.5" transform="translate(901 788)" fill="#ff64eb"/>
+    </g>
+  </g>
+</svg>

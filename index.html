@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Shuchit Pant</title>
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
-<body>
+<body onload="Preload()">
+
+
+    <!-- PRELOADER GOES HERE -->
+
+    <div id="PRE__LOADER">
+    <div id="ctn-preloader" class="ctn-preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+            <div class="txt-loading">
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="H" class="letters-loading">
+                    H
+                </span>
+                <span data-text-preloader="U" class="letters-loading">
+                    U
+                </span>
+                <span data-text-preloader="C" class="letters-loading">
+                    C
+                </span>
+                <span data-text-preloader="H" class="letters-loading">
+                    H
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span><span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
 
     <!-- The Top Nav bar starts here -->
     <div class="nav-container">
@@ -152,7 +205,7 @@
         <img class="right transition2" src="./IMAGES/new shizz/todo app.png" alt="Featured Project">
     </section>
 
-    <section class="About">
+    <!-- <section class="About">
         <img class="DP" src="./IMAGES/new shizz/DP.svg" alt="Featured Project">
         <div class="left">
             <div class="inner transition2">
@@ -166,10 +219,24 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
+<script>
 
+    var preloader = document.getElementById("PRE__LOADER");
+    var delayInMilliseconds = 300;
+    
+
+function Preload(delayInMilliseconds){
+    setTimeout(function(){
+        preloader.style.opacity = 0;
+        preloader.style.display = 'none';
+    },2000)
+    
+}
+    
+</script>
     
 
 </body>

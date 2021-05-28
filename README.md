@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+GITHUB PAGES LINK : https://shuchitpant.github.io/PersonalPortfolio/
 
 You can use the [editor on GitHub](https://github.com/shuchitpant/PersonalPortfolio/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 

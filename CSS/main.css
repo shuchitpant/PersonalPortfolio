@@ -143,6 +143,8 @@ section div {
 
 .skills-container ul li .icon-container {
   height: 100px;
+  padding-left: auto;
+  padding-right: auto;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -151,13 +153,16 @@ section div {
 
 .skills-container ul li .icon-container.one {
   width: 50px;
+  padding-left: 7em;
 }
 
 .skills-container ul li .icon-container.two {
+  padding-left: 5em;
   width: 140px;
 }
 
 .skills-container ul li .icon-container.three {
+  padding-left: 7em;
   width: 90px;
 }
 

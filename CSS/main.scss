@@ -125,6 +125,7 @@ section{
     font-size: .85em;
     line-height: 1.8em;
     font-weight: 500;
+    
 }
 
 .skills{
@@ -136,24 +137,30 @@ section{
 .skills-container ul li{
     background: white;
     padding: 2em;
+
     border-radius:1em;
     margin-bottom: 1em;
 
     .icon-container{
         height: 100px;
+        padding-left: auto;
+        padding-right: auto;
         display: grid;
         place-content: center;
         margin: 0 auto;
 
         &.one{
             width: 50px;
+            padding-left: 7em;
         }
 
         &.two{
+            padding-left: 5em;
             width: 140px;
         }
 
         &.three{
+            padding-left: 7em;
             width: 90px;
         }
     }

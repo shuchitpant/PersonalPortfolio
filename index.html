@@ -58,7 +58,33 @@
     </div>
 </div>
 
+<!-- </div> -->
+
+<!-- HAMBURGER BUTTON STARTS HERE -->
+<div class="hamburger-container">
+    <div onclick="ham_menu_open()" id="ham_opener">
+    <img src="./icons/new/icons8-menu.svg" alt="">
+    <div href="index.html" class="logo_mobile">Shuchit Pant</div>
+    </div>
+    
+    <ul id="ham-menu">
+        <div onclick="ham_menu_close()" id="ham_closer" class="hovereffitemsmenu">CLOSE</div>
+        <div class="hovereffitemsmenu" >My Work</div>
+        <div class="hovereffitemsmenu" >My Skills</div>
+        <div class="hovereffitemsmenu" >About</div>
+        <div class="hovereffitemsmenu" >Blog</div>
+        <div class="hovereffitemsmenu" >
+            
+
+        </div>
+        
+    </ul>
 </div>
+
+<!-- HAMBURGER BUTTON STARTS HERE -->
+
+
+
 
 
     <!-- The Top Nav bar starts here -->
@@ -72,6 +98,7 @@
                     <li><a href="#">My Work</a></li>
                     <li><a href="#">My Skills</a></li>
                     <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
                     <!-- <li><a href="#">Login</a></li> -->
                 </ul>
             </nav>
@@ -236,6 +263,21 @@ function Preload(delayInMilliseconds){
     
 }
     
+ function ham_menu_open(){
+    var a = document.getElementById("ham-menu");
+    var b = document.getElementById("ham_opener");
+
+    a.style.display = 'block';
+    b.style.display='none';
+ }
+
+ function ham_menu_close(){
+    var a = document.getElementById("ham-menu");
+    var b = document.getElementById("ham_opener");
+
+    a.style.display = 'none';
+    b.style.display='block';
+ }
 </script>
     
 

@@ -2,8 +2,60 @@
 body {
   height: 100vh;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #f5f5f5;
+}
+
+.hamburger-container {
+  background-color: #6e00ee;
+}
+
+#ham-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #e0e0e0e5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 3em;
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+  padding-top: 3.5em;
+}
+
+#ham_opener {
+  padding: 1em 0em 0em 2em;
+  height: 60px;
+}
+
+#ham_opener img {
+  height: 40px;
+  width: auto;
+}
+
+#ham_opener .logo_mobile {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -2em;
+  margin-left: -1.2em;
+  font-size: 1.3em;
+  font-weight: 800;
+  font-style: bold;
+  color: #8cd6f9;
+}
+
+.hovereffitemsmenu:hover {
+  background-color: #6e00ee;
 }
 
 ul {
@@ -21,7 +73,7 @@ img {
 }
 
 .nav-container {
-  background: #6E00EE;
+  background: #6e00ee;
 }
 
 .nav-container a {
@@ -29,37 +81,16 @@ img {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 2em;
+  display: none;
 }
 
-header .logo {
-  color: #8CD6F9;
-  font-weight: bold;
-}
-
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header ul a {
-  display: block;
-  padding: 0 1em;
-}
-
-.social-header, .hero-design {
+.social-header,
+.hero-design {
   display: none;
 }
 
 .hero {
-  background: #6E00FF;
+  background: #6e00ff;
   color: white;
   display: -ms-grid;
   display: grid;
@@ -74,7 +105,7 @@ header ul a {
   margin: 0 auto;
   width: 200px;
   font-weight: bold;
-  color: #FF64EB;
+  color: #ff64eb;
 }
 
 .scroll {
@@ -100,7 +131,7 @@ section div {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: #FFC9F8;
+  background: #ffc9f8;
   top: 0;
   left: 0;
   z-index: -1;
@@ -109,29 +140,29 @@ section div {
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #6E00EE;
-  letter-spacing: .2em;
-  font-size: .85em;
+  color: #6e00ee;
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
 }
 
 .featured-title {
   color: black;
   font-weight: bold;
   font-size: 1.3em;
-  margin-top: -.4em;
+  margin-top: -0.4em;
   display: block;
 }
 
 .featured-desc {
-  color: #3B3B3B;
+  color: #3b3b3b;
   margin-bottom: 3em;
-  font-size: .85em;
+  font-size: 0.85em;
   line-height: 1.8em;
   font-weight: 500;
 }
 
 .skills {
-  background: #6E00FF;
+  background: #6e00ff;
 }
 
 .skills-container ul li {
@@ -175,7 +206,7 @@ section div {
 }
 
 .About {
-  background: #6E00FF;
+  background: #6e00ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +224,7 @@ section div {
 }
 
 .About .subtitle {
-  color: #8CD6F9;
+  color: #8cd6f9;
   font-size: 2em;
   letter-spacing: 1em;
 }
@@ -220,6 +251,31 @@ section div {
 }
 
 @media only screen and (min-width: 800px) {
+  .hamburger-container {
+    display: none;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2em;
+  }
+  header .logo {
+    color: #8cd6f9;
+    font-weight: bold;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header ul a {
+    display: block;
+    padding: 0 1em;
+  }
   .featured {
     display: -ms-grid;
     display: grid;
@@ -274,7 +330,7 @@ section div {
     background: unset;
   }
   .nav-container header {
-    background: #6E00EE;
+    background: #6e00ee;
   }
   header {
     padding: 2em 2em 2em 4em;
@@ -310,7 +366,7 @@ section div {
     padding: 0;
   }
   .hero .content {
-    background: #6E00FF;
+    background: #6e00ff;
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
@@ -397,7 +453,7 @@ section div {
 #id {
   height: 100%;
   width: 100%;
-  background-color: #6E00EE;
+  background-color: #6e00ee;
   position: fixed;
   z-index: 10000;
 }
@@ -409,7 +465,7 @@ section div {
 .ctn-preloader {
   -webkit-transition: 1.5s all linear;
   transition: 1.5s all linear;
-  background-color: #6E00FF;
+  background-color: #6e00ff;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -471,37 +527,58 @@ section div {
   transform: rotateY(-90deg);
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(2):before {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(3):before {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(4):before {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(5):before {
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(5):before {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(6):before {
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(6):before {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(7):before {
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(8):before {
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(8):before {
   -webkit-animation-delay: 1.4s;
   animation-delay: 1.4s;
 }

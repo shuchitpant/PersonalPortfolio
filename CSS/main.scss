@@ -14,9 +14,10 @@ body {
 }
 
 #ham-menu {
+	cursor: pointer;
 	display: flex;
 	justify-content: space-around;
-	background-color: #e0e0e0e5;
+	background-color: #e0e0e0f5;
 	align-items: center;
 	text-align: center;
 	font-size: 2.5em;
@@ -28,6 +29,7 @@ body {
 	padding-top: 2.5em;
 }
 #ham_opener {
+	cursor: pointer;
 	padding: 1em 0em 0em 2em;
 	height: 60px;
 	img {
@@ -50,6 +52,7 @@ body {
 	}
 }
 .socialmedia-menuitems {
+	cursor: pointer;
 	display: grid;
 	justify-content: center;
 	align-content: center;
@@ -205,21 +208,23 @@ section {
 		padding-left: auto;
 		padding-right: auto;
 		display: grid;
+		align-items: center;
+		justify-content: center;
 		place-content: center;
 		margin: 0 auto;
 
 		&.one {
 			width: 50px;
-			padding-left: 7em;
+			// padding-left: 7em;
 		}
 
 		&.two {
-			padding-left: 5em;
+			padding-left: 2em;
 			width: 140px;
 		}
 
 		&.three {
-			padding-left: 7em;
+			padding-left: 2em;
 			width: 90px;
 		}
 	}
@@ -233,45 +238,59 @@ section {
 	margin-bottom: 2em;
 }
 
-.About {
-	background: #6e00ff;
+// The About section Starts here
+.About_container {
+	padding: 2em;
+	padding-top: 3em;
+	padding-bottom: 3em;
 	display: flex;
+	// justify-content: center;
 	flex-direction: column;
-	margin-top: 5em;
-	// padding-top:8em ;
-
-	.DP {
-		border-radius: 50%;
-		height: 15em;
-		width: 15em;
+	background-color: #ffc9f8;
+	.image_about_container {
+		padding-bottom: 2.5em;
+		img {
+			height: 15em;
+			width: 15em;
+		}
 	}
 
-	.subtitle {
-		color: #8cd6f9;
-		font-size: 2em;
-		letter-spacing: 1em;
+	.container_about_title {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #6e00ee;
+		letter-spacing: 0.7em;
+		font-size: 1em;
 	}
-
-	.About-desc {
-		color: #ffffff;
+	.container_about_subtitle {
+		color: #3b3b3b;
+		font-size: 0.85em;
+		line-height: 1.8em;
+		font-weight: 500;
 	}
+}
+// The About section ends here
 
-	.About_social {
-		width: 20vw;
+// The Contact Form begins here
 
-		ul {
-			display: flex;
-			justify-content: flex-start;
-			// padding-left: -2em;
+// The Contact Form ends here
 
+@media only screen and (min-width: 800px) {
+	.About_container {
+		flex-direction: row;
+		padding-top: 3em;
+		.container_about_text {
+			width: 40em;
+			padding-top: 6em;
+			padding-left: 3em;
+		}
+		.image_about_container {
 			img {
-				height: 35px;
+				height: 20em;
+				width: 20em;
 			}
 		}
 	}
-}
-
-@media only screen and (min-width: 800px) {
 	.hamburger-container {
 		display: none;
 	}
@@ -329,19 +348,37 @@ section {
 		margin-bottom: -7em;
 	}
 
-	.About {
-		padding-left: 3em;
-		flex-direction: row;
+	// .About {
+	// 	padding-left: 3em;
+	// 	flex-direction: row;
 
-		div {
-			padding-left: 2em;
-		}
-		.About-desc {
-			width: 45vw;
-		}
-	}
+	// 	div {
+	// 		padding-left: 2em;
+	// 	}
+	// 	.About-desc {
+	// 		width: 45vw;
+	// 	}
+	// }
 }
 @media only screen and (min-width: 1050px) {
+	.About_container {
+		flex-direction: row;
+		padding-top: 5em;
+		.container_about_text {
+			width: 40em;
+			padding-top: 6em;
+			padding-left: 3em;
+		}
+		.container_about_title {
+			font-size: large;
+		}
+		.image_about_container {
+			img {
+				height: 20em;
+				width: 20em;
+			}
+		}
+	}
 	.hero {
 		height: 90vh;
 	}
@@ -409,15 +446,46 @@ section {
 		width: 100%;
 	}
 
-	.About {
-		padding-left: 15em;
-		.About-desc {
-			width: 35vw;
-		}
-	}
+	// .About {
+	// 	padding-left: 15em;
+	// 	.About-desc {
+	// 		width: 35vw;
+	// 	}
+	// }
 }
 
 @media only screen and (min-width: 1250px) {
+	.About_container {
+		flex-direction: row;
+		padding-left: 10em;
+		padding-top: 7em;
+		.container_about_text {
+			width: 40em;
+			padding-right: 10em;
+			padding-top: 4em;
+			padding-left: 6em;
+		}
+		.container_about_title {
+			font-size: larger;
+		}
+		.container_about_subtitle {
+			font-size: larger;
+		}
+	}
+	.skills-container ul li {
+		.icon-container {
+			&.one {
+				padding-left: 5.3em;
+			}
+			&.two {
+				padding-left: 3em;
+			}
+			&.three {
+				padding-left: 4em;
+			}
+		}
+	}
+
 	header {
 		padding: 2em 2em 2em 10em;
 	}
@@ -427,31 +495,71 @@ section {
 	section {
 		padding: 10em 0em 4em 10em;
 		div {
-			padding-right: 10em;
+			padding-right: 2em;
 		}
 	}
 	.hero .content {
 		padding: 6em 8em 6em 10em;
 	}
 
-	.About {
-		// width: 100vw;
-		padding-left: 20em;
-		.About-desc {
-			width: 35vw;
-		}
-		.About_social {
-			ul {
-				img {
-					padding-top: 1em;
-					width: 100px;
-				}
-			}
-		}
-	}
+	// .About {
+	// 	// width: 100vw;
+	// 	padding-left: 20em;
+	// 	.About-desc {
+	// 		width: 35vw;
+	// 	}
+	// 	.About_social {
+	// 		ul {
+	// 			img {
+	// 				padding-top: 1em;
+	// 				width: 100px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 @media only screen and (min-width: 1550px) {
+	.About_container {
+		height: 40em;
+		padding-top: 10em;
+		flex-direction: row;
+
+		padding-left: 12em;
+		.container_about_text {
+			width: 40em;
+			padding-right: 10em;
+			padding-top: 4em;
+			padding-left: 4em;
+		}
+		.container_about_title {
+			font-size: x-large;
+		}
+		.container_about_subtitle {
+			font-size: x-large;
+		}
+		.image_about_container {
+			img {
+				height: 25em;
+				width: 25em;
+			}
+		}
+	}
+
+	.skills-container ul li {
+		.icon-container {
+			&.one {
+				padding-left: 6.3em;
+			}
+			&.two {
+				padding-left: 4em;
+			}
+			&.three {
+				padding-left: 5em;
+			}
+		}
+	}
+
 	header {
 		padding: 2em 2em 2em 20em;
 	}
@@ -459,31 +567,33 @@ section {
 		padding: 2em 20em 2em 0;
 	}
 	section {
+		font-size: larger;
 		padding: 20em 0em 4em 10em;
 		div {
-			padding-right: 20em;
+			font-size: larger;
+			padding-right: 4em;
 		}
 	}
 	.hero .content {
 		padding: 6em 8em 6em 20em;
 	}
 
-	.About {
-		display: flex;
-		justify-content: space-around;
+	// .About {
+	// 	display: flex;
+	// 	justify-content: space-around;
 
-		// .About-desc{
-		//     width: 45vw;
-		// }
-		.About_social {
-			ul {
-				padding-left: -2;
-				img {
-					width: 100px;
-				}
-			}
-		}
-	}
+	// 	// .About-desc{
+	// 	//     width: 45vw;
+	// 	// }
+	// 	.About_social {
+	// 		ul {
+	// 			padding-left: -2;
+	// 			img {
+	// 				width: 100px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 // preloader

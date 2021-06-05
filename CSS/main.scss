@@ -401,6 +401,13 @@ input:hover {
 
 // The contact details section starts here
 
+.Footer_container {
+	background-color: #5200bd;
+	color: #8cd6f9;
+	padding: 1em;
+	text-align: center;
+}
+
 @media only screen and (min-width: 800px) {
 	.contact_details_container_max {
 		background-color: #6e00ee;

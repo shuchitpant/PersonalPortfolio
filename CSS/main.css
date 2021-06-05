@@ -17,7 +17,8 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #e0e0e0f5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6e00ee), color-stop(#8cd6f9ec), color-stop(#8cd6f9ec), color-stop(#8cd6f9), to(#6e00ee));
+  background-image: linear-gradient(#6e00ee, #8cd6f9ec, #8cd6f9ec, #8cd6f9, #6e00ee);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -959,6 +960,7 @@ input:hover {
   }
   .hero .content {
     padding: 6em 8em 6em 20em;
+    -webkit-animation: animate__backInLeft 1s 3s 1;
   }
 }
 

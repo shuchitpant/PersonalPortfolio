@@ -17,7 +17,13 @@ body {
 	cursor: pointer;
 	display: flex;
 	justify-content: space-around;
-	background-color: #e0e0e0f5;
+	background-image: linear-gradient(
+		#6e00ee,
+		#8cd6f9ec,
+		#8cd6f9ec,
+		#8cd6f9,
+		#6e00ee
+	);
 	align-items: center;
 	text-align: center;
 	font-size: 2.5em;
@@ -928,7 +934,11 @@ input:hover {
 		}
 	}
 	.hero .content {
+		// animation: animate__backInLeft;
+		// animation-duration: 2s;
+		// animation-delay: 2s;
 		padding: 6em 8em 6em 20em;
+		-webkit-animation: animate__backInLeft 1s 3s 1;
 	}
 
 	// .About {

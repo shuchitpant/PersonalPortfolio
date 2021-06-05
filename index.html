@@ -260,15 +260,15 @@
     <div class="contact_container">
         <div class="contact_container_title">Contact us</div>
         <div class="illustration_form_container">
-        <form action="">
+        <form action="https://formspree.io/f/xdoygvdg" method="POST" id="my-form">
            
-           <input type="text" placeholder="Name">
+           <input type="text" placeholder="Name" name="Name">
            <br>
-           <input type="text" placeholder="Email">
+           <input type="text" placeholder="Email" name="Email">
            <br>
-           <textarea class="contact_message_box" placeholder="Message"></textarea>
+           <textarea class="contact_message_box" placeholder="Message" name="Message"></textarea>
            <br>
-           <button type="submit" class="contact_submit_button">Submit</button>
+           <button type="submit" class="contact_submit_button" id="my-form-status">Submit</button>
         </form>
         <img src="./icons/new/message_illustration.svg" alt="">
         </div>
@@ -343,6 +343,32 @@ function Preload(delayInMilliseconds){
     a.style.display = 'none';
     b.style.display='block';
  }
+
+
+
+ //Contact - form start here
+
+ var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+
 </script>
     
 

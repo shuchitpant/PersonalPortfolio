@@ -246,7 +246,7 @@ section {
 	display: flex;
 	// justify-content: center;
 	flex-direction: column;
-	background-color: #ffc9f8;
+	background-color: #6e00ee;
 	.image_about_container {
 		padding-bottom: 2.5em;
 		img {
@@ -258,12 +258,12 @@ section {
 	.container_about_title {
 		text-transform: uppercase;
 		font-weight: bold;
-		color: #6e00ee;
+		color: #8cd6f9;
 		letter-spacing: 0.7em;
 		font-size: 1em;
 	}
 	.container_about_subtitle {
-		color: #3b3b3b;
+		color: white;
 		font-size: 0.85em;
 		line-height: 1.8em;
 		font-weight: 500;
@@ -272,10 +272,112 @@ section {
 // The About section ends here
 
 // The Contact Form begins here
+.contact_container {
+	background-color: #8cd6f9;
+	height: 30em;
+	padding: 2em;
+	max-height: fit-content;
+}
+.contact_container_title {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #6e00ee;
+	letter-spacing: 0.7em;
+	font-size: 1em;
+}
 
+.illustration_form_container {
+	display: flex;
+	flex-direction: column-reverse;
+
+	img {
+		cursor: default;
+		display: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 18em;
+		height: 18em;
+	}
+}
+
+input {
+	background-color: #e1c8ff;
+	font-style: bold;
+	font-size: 0.85em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.85em 0.5em 0.85em 0.5em;
+	width: 80vw;
+	border: none;
+	border-radius: 25px;
+}
+
+input:hover {
+	background-color: #c89bff;
+}
+
+.contact_message_box {
+	background-color: #e1c8ff;
+	font-style: bold;
+	font-size: 1.05em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.85em 0.5em 0.85em 0.5em;
+	width: 80vw;
+	border: none;
+	border-radius: 25px;
+	height: 10em;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+.contact_message_box:hover {
+	background-color: #c89bff;
+}
+.contact_submit_button {
+	color: #8cd6f9;
+	background-color: #8623ff;
+	font-size: 0.85em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.85em 0.5em 0.85em 0.5em;
+	border-radius: 25px;
+	width: 20vw;
+	border: none;
+	cursor: pointer;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.contact_submit_button:hover {
+	background-color: #b170ff;
+}
 // The Contact Form ends here
 
 @media only screen and (min-width: 800px) {
+	.illustration_form_container {
+		display: flex;
+		flex-direction: row;
+
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 18em;
+			height: 18em;
+		}
+	}
+	input {
+		width: 40vw;
+	}
+	.contact_message_box {
+		width: 40vw;
+	}
 	.About_container {
 		flex-direction: row;
 		padding-top: 3em;
@@ -455,6 +557,28 @@ section {
 }
 
 @media only screen and (min-width: 1250px) {
+	.contact_container {
+		padding-left: 10em;
+		height: fit-content;
+		.contact_container_title {
+			font-size: x-large;
+		}
+		input {
+			font-size: larger;
+		}
+		.contact_submit_button {
+			font-size: larger;
+		}
+		.contact_message_box {
+			font-size: x-large;
+		}
+		.illustration_form_container {
+			img {
+				height: 22em;
+				width: 22em;
+			}
+		}
+	}
 	.About_container {
 		flex-direction: row;
 		padding-left: 10em;
@@ -462,11 +586,11 @@ section {
 		.container_about_text {
 			width: 40em;
 			padding-right: 10em;
-			padding-top: 4em;
+			padding-top: 2.5em;
 			padding-left: 6em;
 		}
 		.container_about_title {
-			font-size: larger;
+			font-size: x-large;
 		}
 		.container_about_subtitle {
 			font-size: larger;
@@ -475,13 +599,13 @@ section {
 	.skills-container ul li {
 		.icon-container {
 			&.one {
-				padding-left: 5.3em;
+				padding-left: 3em;
 			}
 			&.two {
 				padding-left: 3em;
 			}
 			&.three {
-				padding-left: 4em;
+				padding-left: 2.5em;
 			}
 		}
 	}
@@ -520,8 +644,30 @@ section {
 }
 
 @media only screen and (min-width: 1550px) {
+	.contact_container {
+		padding-left: 13em;
+		height: fit-content;
+		.contact_container_title {
+			font-size: x-large;
+		}
+		input {
+			font-size: larger;
+		}
+		.contact_submit_button {
+			font-size: larger;
+		}
+		.contact_message_box {
+			font-size: x-large;
+		}
+		.illustration_form_container {
+			img {
+				height: 22em;
+				width: 22em;
+			}
+		}
+	}
 	.About_container {
-		height: 40em;
+		height: 30em;
 		padding-top: 10em;
 		flex-direction: row;
 
@@ -549,13 +695,13 @@ section {
 	.skills-container ul li {
 		.icon-container {
 			&.one {
-				padding-left: 6.3em;
+				padding-left: 4.5em;
 			}
 			&.two {
-				padding-left: 4em;
+				padding-left: 3em;
 			}
 			&.three {
-				padding-left: 5em;
+				padding-left: 4em;
 			}
 		}
 	}

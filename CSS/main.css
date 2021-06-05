@@ -241,7 +241,7 @@ section div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffc9f8;
+  background-color: #6e00ee;
 }
 
 .About_container .image_about_container {
@@ -256,19 +256,137 @@ section div {
 .About_container .container_about_title {
   text-transform: uppercase;
   font-weight: bold;
-  color: #6e00ee;
+  color: #8cd6f9;
   letter-spacing: 0.7em;
   font-size: 1em;
 }
 
 .About_container .container_about_subtitle {
-  color: #3b3b3b;
+  color: white;
   font-size: 0.85em;
   line-height: 1.8em;
   font-weight: 500;
 }
 
+.contact_container {
+  background-color: #8cd6f9;
+  height: 30em;
+  padding: 2em;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+.contact_container_title {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6e00ee;
+  letter-spacing: 0.7em;
+  font-size: 1em;
+}
+
+.illustration_form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.illustration_form_container img {
+  cursor: default;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18em;
+  height: 18em;
+}
+
+input {
+  background-color: #e1c8ff;
+  font-style: bold;
+  font-size: 0.85em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.85em 0.5em 0.85em 0.5em;
+  width: 80vw;
+  border: none;
+  border-radius: 25px;
+}
+
+input:hover {
+  background-color: #c89bff;
+}
+
+.contact_message_box {
+  background-color: #e1c8ff;
+  font-style: bold;
+  font-size: 1.05em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.85em 0.5em 0.85em 0.5em;
+  width: 80vw;
+  border: none;
+  border-radius: 25px;
+  height: 10em;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.contact_message_box:hover {
+  background-color: #c89bff;
+}
+
+.contact_submit_button {
+  color: #8cd6f9;
+  background-color: #8623ff;
+  font-size: 0.85em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.85em 0.5em 0.85em 0.5em;
+  border-radius: 25px;
+  width: 20vw;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.contact_submit_button:hover {
+  background-color: #b170ff;
+}
+
 @media only screen and (min-width: 800px) {
+  .illustration_form_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .illustration_form_container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18em;
+    height: 18em;
+  }
+  input {
+    width: 40vw;
+  }
+  .contact_message_box {
+    width: 40vw;
+  }
   .About_container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -426,6 +544,28 @@ section div {
 }
 
 @media only screen and (min-width: 1250px) {
+  .contact_container {
+    padding-left: 10em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .contact_container .contact_container_title {
+    font-size: x-large;
+  }
+  .contact_container input {
+    font-size: larger;
+  }
+  .contact_container .contact_submit_button {
+    font-size: larger;
+  }
+  .contact_container .contact_message_box {
+    font-size: x-large;
+  }
+  .contact_container .illustration_form_container img {
+    height: 22em;
+    width: 22em;
+  }
   .About_container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -437,23 +577,23 @@ section div {
   .About_container .container_about_text {
     width: 40em;
     padding-right: 10em;
-    padding-top: 4em;
+    padding-top: 2.5em;
     padding-left: 6em;
   }
   .About_container .container_about_title {
-    font-size: larger;
+    font-size: x-large;
   }
   .About_container .container_about_subtitle {
     font-size: larger;
   }
   .skills-container ul li .icon-container.one {
-    padding-left: 5.3em;
+    padding-left: 3em;
   }
   .skills-container ul li .icon-container.two {
     padding-left: 3em;
   }
   .skills-container ul li .icon-container.three {
-    padding-left: 4em;
+    padding-left: 2.5em;
   }
   header {
     padding: 2em 2em 2em 10em;
@@ -473,8 +613,30 @@ section div {
 }
 
 @media only screen and (min-width: 1550px) {
+  .contact_container {
+    padding-left: 13em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .contact_container .contact_container_title {
+    font-size: x-large;
+  }
+  .contact_container input {
+    font-size: larger;
+  }
+  .contact_container .contact_submit_button {
+    font-size: larger;
+  }
+  .contact_container .contact_message_box {
+    font-size: x-large;
+  }
+  .contact_container .illustration_form_container img {
+    height: 22em;
+    width: 22em;
+  }
   .About_container {
-    height: 40em;
+    height: 30em;
     padding-top: 10em;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -499,13 +661,13 @@ section div {
     width: 25em;
   }
   .skills-container ul li .icon-container.one {
-    padding-left: 6.3em;
+    padding-left: 4.5em;
   }
   .skills-container ul li .icon-container.two {
-    padding-left: 4em;
+    padding-left: 3em;
   }
   .skills-container ul li .icon-container.three {
-    padding-left: 5em;
+    padding-left: 4em;
   }
   header {
     padding: 2em 2em 2em 20em;

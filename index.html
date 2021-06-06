@@ -6,6 +6,7 @@
     
     <title>Shuchit Pant</title>
     <link rel="stylesheet" href="./CSS/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body onload="Preload()">
 
@@ -67,10 +68,10 @@
     <div href="index.html" class="logo_mobile">Shuchit Pant</div>
     </div>
     
-    <ul id="ham-menu">
+    <ul id="ham-menu" data-aos="zoom-in-right">
         <div onclick="ham_menu_close()" id="ham_closer" class="hovereffitemsmenu">Back</div>
-        <div class="hovereffitemsmenu" >Home</div>
-        <div class="hovereffitemsmenu" >My Work</div>
+        <div class="hovereffitemsmenu" href="#home">Home</div>
+        <div class="hovereffitemsmenu" href="#work">My Work</div>
         <div class="hovereffitemsmenu" >My Skills</div>
         <div class="hovereffitemsmenu" >About</div>
         <div class="hovereffitemsmenu" >Blog</div>
@@ -100,7 +101,7 @@
             <nav>
                 <ul>
                     <!-- <li><a href="#">Blog</a></li> -->
-                    <li><a href="#">My Work</a></li>
+                    <li><a href="#work">My Work</a></li>
                     <li><a href="#">My Skills</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
@@ -120,7 +121,7 @@
 
     <div class="hero">
         <div class="content animate__animated animate__bounce animate__delay-3s">
-            <h1>Custom Made 
+            <h1 data-aos-delay="2000" data-aos="fade-up">Custom Made 
                 Website
                 Experiences</h1>
                 <div class="meet">
@@ -165,7 +166,7 @@
     </div>
 
     <!-- Featured Project -->
-    <section class="featured">
+    <section class="featured" id="work">
         <div class="left">
             <div class="inner transition2">
                 <p class="subtitle">featured project</p>
@@ -314,7 +315,14 @@
     </div>
     <!-- Footer starts here -->
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
+    AOS.init();
+</script>
+
+
+<script>
+    
 
     var preloader = document.getElementById("PRE__LOADER");
     var delayInMilliseconds = 300;

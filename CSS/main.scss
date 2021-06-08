@@ -18,13 +18,12 @@ body {
 	cursor: pointer;
 	display: flex;
 	justify-content: space-around;
-	background-image: linear-gradient(
-		#6e00ee,
-		#8cd6f9ec,
-		#8cd6f9ec,
-		#8cd6f9,
-		#6e00ee
-	);
+	background-image: linear-gradient(#c095f0, #6e00ee);
+	color: #f7f3e9;
+	letter-spacing: 12px;
+	line-height: 1.75em;
+	font-weight: 900;
+	// text-transform: uppercase;
 	align-items: center;
 	text-align: center;
 	font-size: 2.5em;

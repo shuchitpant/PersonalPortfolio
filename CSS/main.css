@@ -18,8 +18,12 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#6e00ee), color-stop(#8cd6f9ec), color-stop(#8cd6f9ec), color-stop(#8cd6f9), to(#6e00ee));
-  background-image: linear-gradient(#6e00ee, #8cd6f9ec, #8cd6f9ec, #8cd6f9, #6e00ee);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c095f0), to(#6e00ee));
+  background-image: linear-gradient(#c095f0, #6e00ee);
+  color: #f7f3e9;
+  letter-spacing: 12px;
+  line-height: 1.75em;
+  font-weight: 900;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

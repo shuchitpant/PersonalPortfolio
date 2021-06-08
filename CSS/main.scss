@@ -129,12 +129,18 @@ header {
 }
 
 .hero {
-	height: 70vh;
+	height: 68vh;
 	background: #6e00ff;
 	color: white;
 	display: grid;
 	text-align: center;
 	padding: 4em;
+	.content {
+		h1 {
+			font-size: 2.5em;
+			// text-align: center;
+		}
+	}
 }
 
 .meet {

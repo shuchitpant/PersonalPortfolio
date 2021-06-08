@@ -129,6 +129,7 @@ header {
 }
 
 .hero {
+	height: 70vh;
 	background: #6e00ff;
 	color: white;
 	display: grid;
@@ -416,6 +417,9 @@ input:hover {
 }
 
 @media only screen and (min-width: 800px) {
+	.hero {
+		height: 45vh;
+	}
 	.contact_details_container_max {
 		background-color: #6e00ee;
 		// padding: 2em;

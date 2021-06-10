@@ -33,6 +33,13 @@ body {
 	position: fixed;
 	z-index: 100000;
 	padding-top: 2.5em;
+
+	div {
+		a {
+			text-decoration: none;
+			color: #5a2d91;
+		}
+	}
 }
 #ham_opener {
 	cursor: pointer;
@@ -148,6 +155,12 @@ header {
 	width: 200px;
 	font-weight: bold;
 	color: #ff64eb;
+	p {
+		a {
+			text-decoration: none;
+			color: #ff64eb;
+		}
+	}
 }
 
 .scroll {

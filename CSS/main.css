@@ -37,6 +37,11 @@ body {
   padding-top: 2.5em;
 }
 
+#ham-menu div a {
+  text-decoration: none;
+  color: #5a2d91;
+}
+
 #ham_opener {
   cursor: pointer;
   padding: 1em 0em 0em 2em;
@@ -136,6 +141,11 @@ header {
   margin: 0 auto;
   width: 200px;
   font-weight: bold;
+  color: #ff64eb;
+}
+
+.meet p a {
+  text-decoration: none;
   color: #ff64eb;
 }
 
